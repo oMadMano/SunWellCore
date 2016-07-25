@@ -1221,6 +1221,9 @@ void World::LoadConfigSettings(bool reload)
 
     m_int_configs[CONFIG_BIRTHDAY_TIME] = sConfigMgr->GetIntDefault("BirthdayTime", 1222964635);
 
+    // Developer mode: If this is set to true adding npc and gameobjects is allowed
+    m_bool_configs[CONFIG_DEVELPOER_BUILD_ENABLED] = sConfigMgr->GetBoolDefault("DeveloperMode.Enabled", false);
+
     // call ScriptMgr if we're reloading the configuration
     if (reload)
         sScriptMgr->OnConfigLoad(reload);

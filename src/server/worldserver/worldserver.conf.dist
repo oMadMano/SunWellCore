@@ -2943,4 +2943,11 @@ PlayerDump.DisallowPaths = 1
 PlayerDump.DisallowOverwrite = 1
 
 #
+#    DeveloperMode.Enabled
+#        Description: Enable adding creatures and game-objects on database 1 - (Enabled), 0 - (Disabled).
+#        Default:     0
+
+DeveloperMode.Enabled = 1
+
+#
 ###################################################################################################
